@@ -1,8 +1,14 @@
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
+// components and screens
+import RegisterScreen from "./screens/RegisterScreen";
+
 function App() {
   return (
-    <>
-      <h1>Hello, World!</h1>
-    </>
+    <Router>
+      <Route path="/" component={RegisterScreen} exact />
+    </Router>
   );
 }
 
