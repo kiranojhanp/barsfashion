@@ -1,0 +1,29 @@
+{
+  "name": "barsfashion",
+  "version": "1.0.0",
+  "description": "An online fashion store made with React, redux, nodejs/express and  mongoDB",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiranojhanp/barsfashion.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiranojhanp/barsfashion/issues"
+  },
+  "homepage": "https://github.com/kiranojhanp/barsfashion#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
