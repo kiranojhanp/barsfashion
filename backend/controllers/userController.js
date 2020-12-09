@@ -1,3 +1,8 @@
+import asyncHandler from "express-async-handler";
+import generateToken from "../utils/generateToken.js";
+import User from "../models/userModel.js";
+
+
 // @desc  Register a new user
 // @route  POST /api/users/register
 // @access Public
