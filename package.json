@@ -21,7 +21,10 @@
   "homepage": "https://github.com/kiranojhanp/barsfashion#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.11.4"
+    "mongoose": "^5.11.4",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
