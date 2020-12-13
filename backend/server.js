@@ -20,7 +20,7 @@ app.use(express.json());
 
 // Use enforce.HTTPS({ trustProtoHeader: true }) in case you are behind
 // a load balancer (e.g. Heroku). See further comments below
-app.use(enforce.HTTPS({ trustProtoHeader: true }));
+app.use(enforce.HTTPS());
 
 app.use("/api/users", userRoutes);
 
