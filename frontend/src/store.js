@@ -4,7 +4,7 @@ import { composeWithDevTools } from "redux-devtools-extension";
 
 // reducers
 import { userRegisterReducer } from "./reducers/userReducer";
-
+ 
 // combining all the reducers
 const reducer = combineReducers({ userRegister: userRegisterReducer });
 
