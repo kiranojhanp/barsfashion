@@ -16,11 +16,14 @@ dotenv.config();
 connectDB();
 
 const app = express();
-app.use(express.json());
 
 // Use enforce.HTTPS({ trustProtoHeader: true }) in case you are behind
 // a load balancer (e.g. Heroku). See further comments below
 app.use(enforce.HTTPS());
+
+app.use(express.json());
+
+
 
 app.use("/api/users", userRoutes);
 
