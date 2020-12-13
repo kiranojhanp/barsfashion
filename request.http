@@ -1,5 +1,5 @@
 @hostname = http://localhost
-@port = 4500
+@port = 5000
 @host = {{hostname}}:{{port}}
 @contentType = application/json
 
@@ -8,6 +8,6 @@ Content-Type: {{contentType}}
 
 {
    "name": "Test User",
-   "email": "test@test.com",
+   "email": "test1@test.com",
    "password": "123456"
 }
