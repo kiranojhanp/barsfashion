@@ -3,6 +3,15 @@
 @host = {{hostname}}:{{port}}
 @contentType = application/json
 
+
+POST {{host}}/api/users/login
+Content-Type: {{contentType}} 
+
+{
+   "email": "test@test.com",
+   "password": "123456"
+}
+
 POST {{host}}/api/users/register
 Content-Type: {{contentType}} 
 
