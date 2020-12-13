@@ -1,7 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
 import colors from "colors";
-var enforce = require("express-sslify");
 
 import connectDB from "./config/db.js";
 
@@ -16,10 +15,6 @@ dotenv.config();
 connectDB();
 
 const app = express();
-
-// Use enforce.HTTPS({ trustProtoHeader: true }) in case you are behind
-// a load balancer (e.g. Heroku). See further comments below
-app.use(enforce.HTTPS());
 
 app.use(express.json());
 
