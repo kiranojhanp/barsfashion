@@ -9,6 +9,7 @@ import path from "path";
 import { notFound, errorHandler } from "./middlewares/errorMiddleware.js";
 
 import userRoutes from "./routes/userRoutes.js";
+import productRoutes from "./routes/productRoutes.js";
 
 dotenv.config();
 
@@ -18,10 +19,10 @@ const app = express();
 
 app.use(express.json());
 
-
-
 app.use("/api/users", userRoutes);
+app.use("/api/products", productRoutes);
 
+//  for deploying to heroku
 const __dirname = path.resolve();
 
 if (process.env.NODE_ENV === "production") {
@@ -35,6 +36,7 @@ if (process.env.NODE_ENV === "production") {
     res.send("API is running");
   });
 }
+//-------------------------------------------------------------
 
 app.use(notFound);
 
