@@ -4,9 +4,11 @@ import { composeWithDevTools } from "redux-devtools-extension";
 
 // reducers
 import { userRegisterReducer, userLoginReducer } from "./reducers/userReducer";
+import { productListReducer } from "./reducers/productReducer";
 
 // combining all the reducers
 const reducer = combineReducers({
+  productList: productListReducer,
   userRegister: userRegisterReducer,
   userLogin: userLoginReducer,
 });
