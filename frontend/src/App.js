@@ -7,6 +7,7 @@ import { Container } from "react-bootstrap";
 // components and screens
 import RegisterScreen from "./screens/RegisterScreen";
 import HomeScreen from "./screens/HomeScreen";
+import ProductScreen from "./screens/ProductScreen";
 import LoginScreen from "./screens/LoginScreen";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Container>
           <Route path="/register" component={RegisterScreen} />
           <Route path="/login" component={LoginScreen} />
+          <Route path="/product/:id" component={ProductScreen} />
           <Route path="/" component={HomeScreen} exact />
         </Container>
       </main>
