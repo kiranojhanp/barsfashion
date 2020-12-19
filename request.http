@@ -24,3 +24,14 @@ Content-Type: {{contentType}}
    "email": "test@test.com",
    "password": "123456"
 }
+
+###
+// Get all Products 
+GET {{host}}/api/products
+
+###
+// Get Product by id
+GET {{host}}/api/products/5fba4ad55fb5fc2ad0cea1d3
+
+
+
