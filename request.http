@@ -8,15 +8,16 @@ POST {{host}}/api/users/login
 Content-Type: {{contentType}} 
 
 {
-   "email": "test@test.com",
+   "email": "kiran@ojha.com",
    "password": "123456"
 }
 
+###
 POST {{host}}/api/users/register
 Content-Type: {{contentType}} 
 
 {
-   "name": "Test User",
-   "email": "test1@test.com",
+   "name": "Kiran Ojha",
+   "email": "kiran@ojha.com",
    "password": "123456"
 }
